@@ -1,0 +1,19 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "Personal Website for Michele Kempinsky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkempinsky/PersonalSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkempinsky/PersonalSite/issues"
+  },
+  "homepage": "https://github.com/mkempinsky/PersonalSite#readme"
+}
