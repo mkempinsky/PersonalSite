@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
-
 <head>
+  <meta charset="UTF-8">
+  <title>Personal Website</title>
+
+<link rel="stylesheet" href="bower_components/animate.css/animate.css">
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="bower_components/bulma/css/bulma.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" href="src/main.css">
 </head>
 
-
 <body>
-personal website
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/animated/animated.js"></script>
+<!-- endbower -->
+
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-right">
+      <a class="nav-item is-tab" ui-sref="dashboard">Home</a>
+      <a class="nav-item is-tab" ui-sref="aboutMe">About</a>
+      <a class="nav-item is-tab" ui-sref="projects">Projects</a>
+      <a class="nav-item is-tab" ui-sref="contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div ui-view></div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/jgthms/bulma">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- inject:js -->
+<!-- endinject -->
+
+<script src="app.module.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 </body>
-
-<footer></footer>
-
 </html>

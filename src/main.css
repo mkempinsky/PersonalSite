@@ -1,0 +1,29 @@
+#index-hero  {
+background: linear-gradient(to top right, #757F9A, #D7DDE8); /* Standard syntax */
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+.hero-header {
+	font-size: 3em;
+}
+.hero-subheader {
+	font-size: 1.2em;
+}
+#index-hero-two {
+	background-color: #fff;
+}
+.helloworld-img{
+	padding: 0;
+	height: e0%;
+	width: 40%;
+	margin-left: 60%;
+	display: inline;
+	border-radius-top-left: 2em;
+	margin-top: -20%;
+	border: 10px solid #fff;
+}
+@media (max-width: 600px) {
+  .helloworld-img {
+    display: none;
+  }
+}

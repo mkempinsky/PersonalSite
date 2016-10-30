@@ -1,0 +1,23 @@
+{
+  "name": "Personal Site",
+  "description": "Personal Website for Michele Kempinsky",
+  "main": "index.js",
+  "authors": [
+    "Michele Kempinsky <mkempinsky@icloud.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mkempinsky/PersonalSite",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bulma": "^0.2.3",
+    "font-awesome": "^4.7.0",
+    "animated": "^1.0.2"
+  }
+}
