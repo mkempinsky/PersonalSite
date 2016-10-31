@@ -1,38 +1,61 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
 #index-hero  {
-	background: linear-gradient(to top right, rgba(117,127,154, .5), rgba(215,221,232,.5)),
+	background: linear-gradient(to top right, rgba(108,143,165, .5), rgba(215,221,232,.5)),
 	url('img/symphony.png');
-	font-family: 'Poppins', sans-serif;
 	color: white;
 }
 .hero-header {
-	font-size: 3em;
+	font-size: 4em;
+	text-shadow: -5px 3px 5px rgba(108,143,165, .5);
+	margin-left: 5%;
+
 }
 .hero-subheader {
 	font-size: 1.2em;
+	margin-left: 5%;
 }
 #index-hero-two {
 	background-color: #fff;
 }
+.dash-imgages{
+	display: inline-block;
+}
 .helloworld-img{
-	padding: 0;
-	width: 80%;
-	margin-left: 20%;
-	display: inline;
-	border-radius-top-left: 2em;
-	margin-top: -40%;
-	border: 10px solid #fff;
+    padding: 0;
+    width: 40%;
+    display: inline-block;
+    margin-top: -20%;
+    margin-right: 5%;
+    border: 10px solid #fff;
+    float: right;
 }
 .me-img{
-	border-radius: 90%;
-	padding: 0;
-	width: 80%;
-	display: inline;
-	margin-top: -15%;
-	margin-left: 60%;
-	border: 10px solid #fff;
+    border-radius: 100%;
+    padding: 0;
+    width: 26%;
+    margin-left: 37%;
+    display: inline-block;
+    margin-top: -25%;
+    border: 10px solid #fff;
+    float: left;
+}
+.statement {
+	width: 20%;
+	margin: 5% 0% 5% 5%;
 }
 @media (max-width: 600px) {
-  .helloworld-img {
+  .helloworld-img,
+  .me-img {
     display: none;
   }
 }
@@ -43,13 +66,87 @@
     padding-left: 12px;
     padding-right: 12px;
 }
+.resume-download a{
+	color: #6c8fa5;
+	text-align: center;
+	padding-top: 2px;
+}
+.resume-download a:hover{
+	color: rgb(117,173,172);
+}
 /******** ABOUT ME PAGE *****/
 #aboutMePage,
 #projectsPage,
 #contactPage{
-	background: linear-gradient(to top right, rgba(117,127,154, .5), rgba(215,221,232,.5)),
+	background: linear-gradient(to top right, rgba(108,143,165, .5), rgba(215,221,232,.5)),
 	url('img/symphony.png');
 	font-family: 'Poppins', sans-serif;
-	height: 400px;
 	color: white;
 }
+
+/******** PROJECTS PAGE *****/
+.content{
+	width: 80%;
+	margin-left: 10%;
+	background-color: #fff;
+	height: 100%;
+}
+.construction-img{
+	width: 50%;
+	margin-left: 25%;
+}
+.sorry{
+	width: 80%;
+	margin-left: 10%;
+	padding: 20px;
+}
+a {
+    color: rgb(108,143,165);
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: none 86ms ease-out;
+    transition: none 86ms ease-out;
+}
+
+/******** CONTACT PAGE *****/
+.contact-hero{
+	background: url('img/BEACH.png');
+	background-repeat: no-repeat;
+}
+.about-images{
+	border-radius: 90%;
+	margin-top: 15%;
+	margin-bottom: 10%;
+	box-shadow: -2px 12px 35px rgba(108,143,165, .5);
+}
+.col-content{
+	text-align: center;
+}
+.content a:not(.button):visited {
+    color: rgb(108,143,165);
+}
+.content a:not(.button):hover {
+    color: rgb(117,173,172);
+}
+.about-me-text,
+.contact-me-text{
+	margin-top: 15%;
+	margin-bottom: 10%;
+	text-align: left;
+}
+.about-me-start {
+	font-size: 2em;
+	color: rgb(108,143,165);
+}
+.contact-me-links{
+	text-align: left;
+}
+.awesome{
+	font-family: 'Lobster', cursive;
+	color: rgb(117,173,172);
+	font-size: 1.5em;
+	text-shadow: -2px 8px 20px rgba(108,143,165, .5);
+
+}
+
+
