@@ -117,6 +117,7 @@ a {
 	border-radius: 90%;
 	margin-top: 15%;
 	margin-bottom: 10%;
+	width: 80%;
 	box-shadow: -2px 12px 35px rgba(108,143,165, .5);
 }
 .col-content{
@@ -133,6 +134,9 @@ a {
 	margin-top: 15%;
 	margin-bottom: 10%;
 	text-align: left;
+}
+.about-me-letter{
+	padding: 0% 5% 5% 5%;
 }
 .about-me-start {
 	font-size: 2em;
