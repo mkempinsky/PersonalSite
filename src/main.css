@@ -1,5 +1,6 @@
 #index-hero  {
-background: linear-gradient(to top right, #757F9A, #D7DDE8); /* Standard syntax */
+	background: linear-gradient(to top right, rgba(117,127,154, .5), rgba(215,221,232,.5)),
+	url('img/symphony.png');
 	font-family: 'Poppins', sans-serif;
 	color: white;
 }
@@ -14,16 +15,41 @@ background: linear-gradient(to top right, #757F9A, #D7DDE8); /* Standard syntax 
 }
 .helloworld-img{
 	padding: 0;
-	height: e0%;
-	width: 40%;
-	margin-left: 60%;
+	width: 80%;
+	margin-left: 20%;
 	display: inline;
 	border-radius-top-left: 2em;
-	margin-top: -20%;
+	margin-top: -40%;
+	border: 10px solid #fff;
+}
+.me-img{
+	border-radius: 90%;
+	padding: 0;
+	width: 80%;
+	display: inline;
+	margin-top: -15%;
+	margin-left: 60%;
 	border: 10px solid #fff;
 }
 @media (max-width: 600px) {
   .helloworld-img {
     display: none;
   }
+}
+.nav-item a.is-tab, a.nav-item.is-tab:hover {
+	color: #6C8FA5;
+	border-bottom: 2px solid #6C8FA5;
+    border-top: 1px solid transparent;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/******** ABOUT ME PAGE *****/
+#aboutMePage,
+#projectsPage,
+#contactPage{
+	background: linear-gradient(to top right, rgba(117,127,154, .5), rgba(215,221,232,.5)),
+	url('img/symphony.png');
+	font-family: 'Poppins', sans-serif;
+	height: 400px;
+	color: white;
 }
