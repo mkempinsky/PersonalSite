@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/mkempinsky/PersonalSite#readme",
   "dependencies": {
-    "angular-ui-router": "^0.3.1",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-connect": "^5.0.0",
     "gulp-inject": "^4.1.0",
     "gulp-livereload": "^3.8.1",
