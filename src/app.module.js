@@ -26,5 +26,10 @@ angular.module('app', ['ui.router'])
 				url: '/contact', 
 				controller: 'ContactController as contactCtrl',
 				templateUrl: 'contact/contact.html'
+			})
+			.state('noshSpot', {
+				url: '/noshSpot', 
+				controller: 'noshSpotController as noshCtrl',
+				templateUrl: '../src/projects/noshspot/noshSpot.html'
 			});
 	}
