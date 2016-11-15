@@ -7,12 +7,25 @@
   main {
     flex: 1 0 auto;
   }
- .hero-body{
- 	padding: 0;
- }
+.nav {
+	background-color: 	#1a1a1a;
+}
+.nav-item a.is-tab, a.nav-item.is-tab{
+	color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.nav-item a.is-tab, a.nav-item.is-tab:hover {
+	color: #ffdf00;
+	border-bottom: 2px solid #ffdf00;
+    border-top: 1px solid transparent;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
+/******** DashBoard PAGE *****/
 
-#index-hero  {
+#dash-hero  {
 	background-image: url('img/doubleMe.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -23,6 +36,7 @@
 	color: 	#ffdf00;
 	font-size: 10em;
 	padding-top: 10%;
+	padding-bottom: 2%;
 }
 @media only screen and (max-width : 670px) {
     .dash-title, 
@@ -32,18 +46,6 @@
 }
 .whatIDo-img{
 	width: 100%;
-}
-.nav-hero{
-	background-image: url('img/trees.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-}
-.hero-header {
-	font-size: 4em;
-	text-shadow: -5px 3px 5px rgba(108,143,165, .5);
-	margin-left: 5%;
-
 }
 .hero-subheader {
 	font-size: 1.2em;
@@ -84,56 +86,11 @@
     display: none;
   }
 }
-.nav-item a.is-tab, a.nav-item.is-tab:hover {
-	color: #6C8FA5;
-	border-bottom: 2px solid #6C8FA5;
-    border-top: 1px solid transparent;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.resume-download a{
-	color: #6c8fa5;
-	text-align: center;
-	padding-top: 2px;
-}
-.resume-download a:hover{
-	color: rgb(117,173,172);
-}
+
 /******** ABOUT ME PAGE *****/
 #aboutMePage,
-#contactPage{
-	background: linear-gradient(to top right, rgba(108,143,165, .5), rgba(215,221,232,.5)),
-	url('img/symphony.png');
-	font-family: 'Poppins', sans-serif;
-	color: white;
-}
-
-/******** PROJECTS PAGE *****/
-.projects-hero{
-	color: #fff;
-	background: linear-gradient(to right, 	#050942, #7eaea8);
-}
-
-/******** CONTACT PAGE *****/
-.contact-hero{
-	background: url('img/BEACH.png');
-	background-repeat: no-repeat;
-}
-.about-images{
-	border-radius: 90%;
-	margin-top: 15%;
-	margin-bottom: 10%;
-	width: 80%;
-	box-shadow: -2px 12px 35px rgba(108,143,165, .5);
-}
-.col-content{
-	text-align: center;
-}
-.content a:not(.button):visited {
-    color: rgb(108,143,165);
-}
-.content a:not(.button):hover {
-    color: rgb(117,173,172);
+#dashboardPage{
+	font-family: 'Montserrat', sans-serif;
 }
 .about-me-text,
 .contact-me-text{
@@ -146,17 +103,76 @@
 }
 .about-me-start {
 	font-size: 2em;
-	color: rgb(108,143,165);
+	color: 	#ffdf00;
+}
+.about-images{
+	margin-top: 15%;
+	margin-bottom: 10%;
+	height: 40em;
+	width: 80%;
+	box-shadow: -10px 10px #ffdf00;
+}
+
+
+/******** PROJECTS PAGE *****/
+
+.allProjects {
+	margin-top: 10%;
+}
+.projectsRow{
+	display: inline-block;
+}
+.singleProject {
+	background-color: #ffdf00;
+	margin-left: 5%;
+	width: 25%;
+	height: 10em;
+}
+
+/******** CONTACT PAGE *****/
+#contactPage{
+	background-color: #fff;
+}
+.letsCreate-img{
+	width: 80%;
+	margin-left: 5%;
+	margin-top: 10%;
+}
+.contact-hero{
+	background: url('img/BEACH.png');
+	background-repeat: no-repeat;
+}
+
+.col-content{
+	text-align: center;
+}
+.content a:not(.button){
+    color: #fff;
+}
+.content a:not(.button):visited {
+    color: #fff;
+}
+.content a:not(.button):hover {
+    color: #ffdf00;
 }
 .contact-me-links{
 	text-align: left;
 }
-.awesome{
-	font-family: 'Lobster', cursive;
-	color: rgb(117,173,172);
+.contact-button{
+	background-color: #000;
 	font-size: 1.5em;
-	text-shadow: -2px 8px 20px rgba(108,143,165, .5);
-
+	width: 15%;
+	margin-left: 12%;
+	text-align: center;
+	display: inline-block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-bottom: 5%;
+	margin-top: 5%;
 }
+.contact-icon{
+	padding-top: 2%;
+}
+
 
 
