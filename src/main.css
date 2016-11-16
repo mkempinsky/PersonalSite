@@ -2,10 +2,12 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #fff;
   }
 
   main {
     flex: 1 0 auto;
+    background-color: #fff;
   }
 .nav {
 	background-color: 	#1a1a1a;
@@ -31,17 +33,23 @@
 	background-size: 100%;
 }
 
-.dash-title, 
-.dash-subtitle{
+.dash-title{
 	color: 	#ffdf00;
-	font-size: 10em;
 	padding-top: 10%;
-	padding-bottom: 2%;
+	font-size: 10em;
+	margin-left: 5%;
+} 
+.dash-subtitle{
+	font-size: 6em;
+	padding-bottom: 20%;
+	color: 	#ffdf00;
+	padding-top: 10%;
+	margin-left: 5%;
 }
 @media only screen and (max-width : 670px) {
     .dash-title, 
 	.dash-subtitle {
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 .whatIDo-img{
@@ -54,31 +62,60 @@
 #index-hero-two {
 	background-color: #fff;
 }
-.dash-imgages{
-	display: inline-block;
-}
-.helloworld-img{
-    padding: 0;
-    width: 40%;
-    display: inline-block;
-    margin-top: -20%;
-    margin-right: 5%;
-    border: 10px solid #fff;
-    float: right;
-}
-.me-img{
-    border-radius: 100%;
-    padding: 0;
-    width: 26%;
-    margin-left: 37%;
-    display: inline-block;
-    margin-top: -25%;
-    border: 10px solid #fff;
-    float: left;
-}
-.statement {
+.computer-img{
+	margin-left: 7%;
 	width: 20%;
-	margin: 5% 0% 5% 5%;
+	position: absolute;
+	z-index: 10;
+}
+.iphone-img{
+	margin-left: 25%;
+	width: 10%;
+	position: absolute;
+	z-index: 10;
+}
+.lines-img{
+	margin-left: 40%;
+	width: 60%;
+	position: absolute;
+	z-index: -10;
+	margin-top: -40%;
+}
+.smallLines-img{
+	margin-left: 2%;
+	width: 10%;
+	position: absolute;
+	z-index: 10;
+	margin-top: -20%;
+}
+
+#whatIDo-hero{
+	background-color: #fff;
+	position: relative;
+}
+.whatIDo-title{
+	position: absolute;
+	margin-top: -15%;
+	margin-left: 7%;
+	width: 18%;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	background-color: #000;
+}
+.whatIDo-subtitle {
+	margin-top: -10%;
+	position: absolute;
+	margin-left: 7%;
+	font-size: 6em;
+	color: #000;
+}
+.whatIDo-blurb{
+	position: absolute;
+	z-index: 15;
+	width: 55%;
+	margin-left: 40%;
+	padding-top: 2%;
 }
 
 
@@ -95,17 +132,40 @@
 }
 .about-me-letter{
 	padding: 0% 5% 5% 5%;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .9);
+	z-index: 100;
+}
+.about-me-letter p{
+	z-index: 100;
 }
 .about-me-start {
 	font-size: 2em;
-	color: 	#ffdf00;
+	background-color: #000;
+	color: 	#fff;
+	text-align: center;
+	width:  60%;
+	z-index: 10;
+	margin-left: -5%;
 }
-.about-images{
+.aboutMe-img{
+	width: 60%;
+	border-radius: 90em;
 	margin-top: 15%;
-	margin-bottom: 10%;
-	height: 40em;
-	width: 80%;
-	box-shadow: -10px 10px #ffdf00;
+	border: 10px solid #ffdf00;
+}
+.user-img{
+	margin-left: 40%;
+	width: 60%;
+	position: absolute;
+	opacity: 0.3;
+}
+.lines2-img{
+	width: 100%;
+	position: absolute;
+	z-index: -10;
+	margin-top: -30%;
+	transform: rotate(30deg);
 }
 
 
@@ -147,22 +207,31 @@
 	font-size: 1em;
 	}
 }
+.cone-img{
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 10%;
+}
+.construction-text{
+	font-size: 2em;
+	color: red;
+}
+.githublink{
+	color: #000;
+	font-size: 1.5em;
+}
 /******** CONTACT PAGE *****/
 #contactPage{
 	background-color: #fff;
 }
-.letsCreate-img{
-	width: 80%;
-	margin-left: 5%;
-	margin-top: 10%;
-}
-.contact-hero{
-	background: url('img/BEACH.png');
+#contact-hero{
+	background-image: url('img/coffeAndCode.jpeg');
 	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-.col-content{
-	text-align: center;
+a{
+	color: #fff;
 }
 .content a:not(.button){
     color: #fff;
@@ -174,23 +243,12 @@
     color: #ffdf00;
 }
 .contact-me-links{
-	text-align: left;
-}
-.contact-button{
+	font-size: 2em;
+	z-index: 10;
 	background-color: #000;
-	font-size: 1.5em;
-	width: 15%;
-	margin-left: 12%;
-	text-align: center;
-	display: inline-block;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	margin-bottom: 5%;
-	margin-top: 5%;
 }
+
 .contact-icon{
 	padding-top: 2%;
 }
-
-
 
