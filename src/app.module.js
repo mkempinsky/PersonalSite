@@ -1,4 +1,5 @@
-angular.module('app', ['ui.router'])
+angular
+	.module('app', ['ui.router'])
 	.config(appConfig);
 
 	appConfig.$inject= ['$urlRouterProvider', '$stateProvider'];
@@ -17,19 +18,39 @@ angular.module('app', ['ui.router'])
 				controller: 'AboutMeController as aboutCtrl',
 				templateUrl: 'aboutMe/aboutMe.html'
 			})
-			.state('projects',{
-				url: '/projects',
-				controller: 'ProjectsController as projectsCtrl',
-				templateUrl: 'projects/projects.html'
-			})
 			.state('contact', {
 				url: '/contact', 
 				controller: 'ContactController as contactCtrl',
 				templateUrl: 'contact/contact.html'
 			})
-			.state('noshSpot', {
-				url: '/noshSpot', 
-				controller: 'noshSpotController as noshCtrl',
-				templateUrl: '../src/projects/noshspot/noshSpot.html'
+			.state('projects', {
+				url: '/projects', 
+				controller: 'ProjectsController as projectsCtrl',
+				templateUrl: 'projects/projects.html'
 			});
+
+
+			// .state('projects',{
+			// 	url: '/projects',
+			// 	abstract: true,
+			// 	templateUrl:'projects/projects.html'
+			// })
+			// 	.state('projects.dash', {
+			// 		url: '/myProjects',
+			// 		controller: 'ProjectsController as projectsCtrl',
+			// 		templateUrl: 'projects/projects.dash.html'
+			// 	})
+			// 	.state('projects.noshSpot', {
+			// 		url: '/myProjects/noshSpot',
+			// 		controller: 'NoshSpotController as noshCtrl',
+			// 		templateUrl: 'projects/projects.nosh.html'
+			// 	})
+			// 	.state('projects.whiim',{
+			// 		url: '/myProjects/whiim',
+			// 		controller: 'WhiimController as whiimCtrl',
+			// 		templateUrl: 'projects/projects.whiim.html'
+			// 	})
+			
+			
+			
 	}

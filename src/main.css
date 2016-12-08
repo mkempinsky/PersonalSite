@@ -10,7 +10,10 @@
     background-color: #fff;
   }
 .nav {
-	background-color: 	#1a1a1a;
+	background-color: rgba(0,0,0, .5);
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
 }
 .nav-item a.is-tab, a.nav-item.is-tab{
 	color: #fff;
@@ -151,6 +154,7 @@
 .aboutMe-img{
 	width: 60%;
 	border-radius: 90em;
+	margin-left: 18%;
 	margin-top: 15%;
 	border: 10px solid #ffdf00;
 }
@@ -174,11 +178,26 @@
 	font-family: 'Montserrat', sans-serif;
 	position: relative;
 }
+.card{
+	background-color: rgba(255, 255, 255, .1)
+}
+.card-content{
+	background-color: rgb(255, 255, 255);
+	margin-top: -2%;
+	text-align: center;
+	font-size: 1.5em;
+}
 .projectsRow{
 	display: inline-block;
 }
 .singleProject{
-	position: absolute;
+	display: inline-block;
+	margin-left: 7%;
+	margin-top: 5%;
+	width: 24%;
+	z-index: 10;
+}
+.singleProject1{
 	display: inline-block;
 	margin-left: 7%;
 	margin-top: 20%;
@@ -193,12 +212,12 @@
 }
 .myProjectsTitle{
 	font-size: 3em;
-	margin-top: 5%;
-	z-index: 10;
+	margin-top: 10%;
+	position: absolute;
+	z-index: 100;
 	width: 20%;
 	margin-left: 7%;
 	text-align: center;
-	position: absolute;
 	color: #fff;
 	background-color: #000;
 }
@@ -207,48 +226,59 @@
 	font-size: 1em;
 	}
 }
-.cone-img{
-	width: 20%;
-	margin-left: 40%;
-	margin-top: 10%;
-}
-.construction-text{
-	font-size: 2em;
-	color: red;
-}
-.githublink{
-	color: #000;
-	font-size: 1.5em;
+.singleProject1:hover,
+.singleProject:hover{
+	border: 3px solid #ffdf00;
+	transition: .5s;
+	transform: scale(1.1);
+	box-shadow: -8px 8px 50px rgba(147, 147, 147, .8);
 }
 /******** CONTACT PAGE *****/
 #contactPage{
 	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
 }
 #contact-hero{
 	background-image: url('img/coffeAndCode.jpeg');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	height: auto;
 }
-
-a{
-	color: #fff;
+.create-text{
+	color: #ffdf00;
+	font-size: 5em;
+	margin-left: 7%;
+	padding-top: 20%;
 }
-.content a:not(.button){
-    color: #fff;
-}
-.content a:not(.button):visited {
-    color: #fff;
-}
-.content a:not(.button):hover {
-    color: #ffdf00;
+@media only screen and (max-width : 670px) {
+    .create-text{
+        font-size: 1em;
+    }
+    .contact-me-links{
+    	margin-left: 0;
+    	width: 100%;
+    	font-size: 1em;
+    }
 }
 .contact-me-links{
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	border: none;
+	width: 20%;
+	margin-left: 40%;
+	margin-bottom: 1%;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
-	z-index: 10;
-	background-color: #000;
+	padding: 2%;
 }
-
+.contact-me-links:hover{
+	color: #ffdf00;
+}
+.contact-div{
+	margin-bottom: 5%;
+}
 .contact-icon{
-	padding-top: 2%;
+	padding-top: 1%;
+	text-align: right;
 }
 

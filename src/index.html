@@ -20,17 +20,11 @@
 <body>
    <nav class="nav">
       <div class="container">
-        <!-- <div class="resume-download animated pulse infinite">
-          <a href="img/kempinsky_dev_resume.pdf" target="_blank" download>
-            <i class="fa fa-download" aria-hidden="true"></i>
-            <p>View My Resume Now!</p>
-          </a>
-        </div> -->
         <div class="nav-right">
           <a class="nav-item is-tab" ui-sref="dashboard">Home</a>
           <a class="nav-item is-tab" ui-sref="aboutMe">About</a>
           <a class="nav-item is-tab" ui-sref="projects">Projects</a>
-          <a class="nav-item is-tab" href="img/mKempinsky_Dev_RESUME.pdf">Resume</a>
+          <a class="nav-item is-tab" href="img/mKempinsky_Dev_RESUME.pdf" target="_blank">Resume</a>
           <a class="nav-item is-tab" ui-sref="contact">Contact</a>
         </div>
       </div>
@@ -39,6 +33,7 @@
 <main>
   <div ui-view></div>
 </main>
+
 
 <!-- <footer class="footer">
   <div class="container">
@@ -57,9 +52,10 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/animated/animated.js"></script>
 <!-- endbower -->
-<script src="projects/projectsController.js"></script>
+<script src="../projects/ProjectsController.js"></script>
 <!-- inject:js -->
 <script src="app.module.js"></script>
+<script src="projects/ProjectsController.js"></script>
 <!-- endinject -->
 
 <script src="app.module.js"></script>
