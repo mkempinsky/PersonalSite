@@ -18,6 +18,19 @@ angular
 				controller: 'AboutMeController as aboutCtrl',
 				templateUrl: 'aboutMe/aboutMe.html'
 			})
+<<<<<<< Updated upstream
+=======
+			.state('projects',{
+				url: '/projects',
+				controller: 'ProjectsController as projectsCtrl',
+				templateUrl: 'projects/projects.html'
+			})
+			.state('codeWars',{
+				url: '/codeWars',
+				controller: 'CodeWarsController as codeWarsCtrl',
+				templateUrl: 'codeWars/codeWars.html'
+			})
+>>>>>>> Stashed changes
 			.state('contact', {
 				url: '/contact', 
 				controller: 'ContactController as contactCtrl',
